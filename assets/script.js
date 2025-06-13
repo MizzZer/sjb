@@ -28,10 +28,10 @@ const prevBtn = document.getElementById("prev-btn");
 const nextBtn = document.getElementById("next-btn");
 
 const imageSources = [
-  "assets/img1.jpg",
-  "assets/img2.jpg",
-  "assets/img3.jpg",
-  "assets/img4.jpg"
+  "https://mizzzer.github.io/sjb/assets/img1.png",
+  "https://mizzzer.github.io/sjb/assets/img2.png",
+  "https://mizzzer.github.io/sjb/assets/img3.png",
+  "https://mizzzer.github.io/sjb/assets/img4.png"
 ];
 
 let currentIndex = 0;
