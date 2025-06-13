@@ -109,8 +109,8 @@ footer {
 }
 
 .image-gallery img.thumb {
-  width: 80px;
-  height: 80px;
+  width: 106px;
+  height: 106px;
   object-fit: cover;
   border-radius: 5px;
   cursor: pointer;
