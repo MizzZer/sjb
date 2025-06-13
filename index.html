@@ -76,9 +76,25 @@
         </div>
 
         <div class="card gif-placeholder">
-          <h3>🎞️ Визуальный блок</h3>
-          <p>🔄 Сюда можно вставить гифку или демо видео</p>
+          <h3>🖼️ Превью</h3>
+          <div class="image-gallery">
+            <img src="https://mizzzer.github.io/sjb/assets/img1.jpg" alt="Превью 1" class="thumb" data-index="0" />
+            <img src="https://mizzzer.github.io/sjb/assets/img2.jpg" alt="Превью 2" class="thumb" data-index="1" />
+            <img src="https://mizzzer.github.io/sjb/assets/img3.jpg" alt="Превью 3" class="thumb" data-index="2" />
+            <img src="https://mizzzer.github.io/sjb/assets/img4.jpg" alt="Превью 4" class="thumb" data-index="3" />
+          </div>
         </div>
+        
+        <!-- Модальное окно -->
+        <div id="modal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="modal-img" />
+          <div class="modal-nav">
+            <button id="prev-btn">←</button>
+            <button id="next-btn">→</button>
+          </div>
+        </div>
+
       </div>
     </section>
 
