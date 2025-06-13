@@ -44,8 +44,14 @@ main {
 }
 
 .fade-in {
-    opacity: 0;
-    transform: translateY(30px);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .fade-in.visible {
@@ -59,7 +65,61 @@ footer {
     background: #111;
     font-size: 0.9rem;
 }
+.detail-block {
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+  background-color: #1b1b1b;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+section.details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 3rem auto;
+  padding: 1rem;
+}
+.card {
+  background-color: #1c1c1c;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+.features-columns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
 
+.column {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cta-buttons a {
+  background-color: #0057ff;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  margin: 0 0.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+h1 {
+  margin-bottom: 0.5rem;
+}
 @media (max-width: 768px) {
     .content-section {
         flex-direction: column !important;
